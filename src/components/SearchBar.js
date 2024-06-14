@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const SearchBar = ({onSearch}) => { 
     const [term, setTerm] = useState('');
@@ -7,7 +7,7 @@ const SearchBar = ({onSearch}) => {
         setTerm(event.target.value);
     };
 
-    const search = () => {
+    const handleSearch = () => {
         onSearch(term);
     };
 
@@ -18,7 +18,7 @@ const SearchBar = ({onSearch}) => {
                 value={term}
                 onChange={handleTermChange}
             />
-            <button className="SearchButton" onClick={search}>Search</button>
+            <button className="SearchButton" onClick={handleSearch}>Search</button>
         </div>
     );
 };

@@ -1,25 +1,32 @@
-import logo from '../logo.svg';
+import React, {useState} from 'react'
+import SearchBar from './SearchBar';
+import SearchResults from './SearchResults';
 import '../App.css';
+import YTMusic from 'ytmusic-api';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [searchResults, setSearchResults] = useState([]);
+    const ytmusic = new YTMusic();
+
+    const search = async (term) => {
+      try {
+        await ytmusic.initialize();
+        const results = await ytmusic.search(term);
+        setSearchResults(results);
+      } catch (error) {
+        console.error('Error searching for tracks', error);
+      }
+    };
+    
+    return(
+      <div>
+        <h1>Prep2Play</h1>
+        <div className="App">
+          <SearchBar onSearch={search}/>
+          <SearchResults searchResults={searchResults}/>
+        </div>
+      </div>
+    );
+};
 
 export default App;
