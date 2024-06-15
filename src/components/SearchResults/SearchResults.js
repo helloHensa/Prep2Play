@@ -1,5 +1,5 @@
 import React from "react";
-import TrackList from "./Tracklist";
+import TrackList from "../Tracklist/Tracklist";
 import './SearchResults.css';
 
 const SearchResults = ({ searchResults, onAdd }) => {

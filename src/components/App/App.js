@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import SearchBar from './SearchBar';
-import SearchResults from './SearchResults';
-import '../App.css';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import './App.css';
 import YTMusic from 'ytmusic-api';
 
 const App = () => {
