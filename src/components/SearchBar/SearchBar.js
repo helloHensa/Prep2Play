@@ -7,10 +7,11 @@ const SearchBar = ({onSearch}) => {
         setTerm(event.target.value);
     };
 
-    const handleSearch = () => {
+    const search = () => {
         onSearch(term);
     };
 
+  
     return(
         <div className="SearchBar">
             <input 
@@ -18,7 +19,7 @@ const SearchBar = ({onSearch}) => {
                 value={term}
                 onChange={handleTermChange}
             />
-            <button className="SearchButton" onClick={handleSearch}>Search</button>
+            <button className="SearchButton" onClick={search}>Search</button>
         </div>
     );
 };

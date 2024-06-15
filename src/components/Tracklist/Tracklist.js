@@ -8,7 +8,7 @@ const Tracklist = ({ tracks, onAdd, isRemoval, onRemove}) => {
         <div className="Tracklist">
             {tracks.map(track => (
                 <Track
-                    key={track.videoId}
+                    key={track.id}
                     track={track}
                     onAdd={onAdd}
                     isRemoval={isRemoval}

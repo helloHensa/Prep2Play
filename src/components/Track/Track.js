@@ -13,15 +13,10 @@ const Track = ({ track, onAdd, isRemoval, onRemove }) => {
     return(
         <div className="Track">
             <div className="Track-information">
-                <h3>{track.title}</h3>
-                <p>{track.artist.name} | {track.album.name}</p>
+                <h3>{track.name}</h3>
+                <p>{track.artist} | {track.album}</p>
             </div>
-            {isRemoval ? (
-                <button className="Track-action" onClick={removeTrack}>-</button>
-            ) : (
-                <button className="Track-action" onClick={addTrack}>+</button>
-                
-            )}
+            <button className="Track-action" onClick={addTrack}>+</button>
         </div>
     );
 };
