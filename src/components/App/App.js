@@ -36,7 +36,6 @@ const App = () => {
 
   return (
     <div>
-      <h1 className='App-header'>Prep2Play</h1>
       <div className="App">
         <SearchBar onSearch={search} />
         <SearchResults searchResults={searchResults} onAdd={addTrack} />

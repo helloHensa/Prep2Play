@@ -6,6 +6,7 @@ const Playlist = ({ playlistTracks, onRemove }) => {
         <div>
             <h2>Playlist</h2>
             <Tracklist tracks={playlistTracks} isRemoval={true} onRemove={onRemove} />
+            <button>Save To Spotify</button>
         </div>
     );
 };
