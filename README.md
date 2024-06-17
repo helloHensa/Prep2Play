@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Prep2Play
+> Prep2Play is a music playlist application built using React. It allows users to search for tracks, add them to a playlist, and manage the playlist.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Contributing](#contributing)
+* [License](#license)
 
-## Available Scripts
+## Installation
+To set up the project locally, follow these steps:
 
-In the project directory, you can run:
+Clone the repository:
 
-### `npm start`
+`git clone https://github.com/helloHensa/prep2play.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`cd prep2play`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies:
 
-### `npm test`
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the development server:
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application should now be running on http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+- Search for tracks: Use the search bar to find tracks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add to playlist: Click the add button on a track to add it to the playlist. If a track is already in the playlist, you will be prompted to confirm if you want to add it again.
 
-### `npm run eject`
+- Remove from playlist: Click the remove button on a track in the playlist to remove it.
+## Features
+- Track search: Search for tracks to add to your playlist.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Playlist management: Add and remove tracks from your playlist.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Duplicate track handling: Alerts you when a track is already in the playlist and asks for confirmation to add it again.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
+- React: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for styling.
+- JavaScript: The programming language used for the project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+Contributions are welcome! If you have any ideas, suggestions, or issues, please open an issue or submit a pull request.
 
-## Learn More
+Fork the repository.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a new branch: `git checkout -b feature-name`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Make your changes and commit them: `git commit -m 'Add some feature'`
 
-### Code Splitting
+Push to the branch: `git push origin feature-name`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open a pull request.
+## License
+This project is licensed under the MIT License.
