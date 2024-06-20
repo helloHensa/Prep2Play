@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react'
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
-// import './App.css';
+import './App.css';
+import designerImage from './Designer.jpeg';
 
 
 const App = () => {
@@ -36,8 +37,8 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-white bg-gray-800 p-4">Prep2Play</h1>
-      <div className="text-center bg-[url('/Designer.jpeg')] h-full px-[17%] pt-0 pb-[10%] bg-cover bg-center bg-no-repeat font-sans font-medium text-white">
+      <h1 className="App-header text-4xl font-bold text-white bg-gray-800 p-4">Prep2Play</h1>
+      <div className="App">
         <SearchBar onSearch={search} />
         <SearchResults searchResults={searchResults} onAdd={addTrack} />
         <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} />
