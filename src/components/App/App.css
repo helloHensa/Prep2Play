@@ -1,11 +1,9 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./Designer.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./Designer.jpeg');
   height: 100%;
-  padding: 0 17% 10% 17%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 0 10% 15% 10%;
+  background-size:cover;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   color: #fff;
@@ -15,7 +13,7 @@
 .App-header {
   margin: 0;
   background-color: #282c34;
-  height: 10vh;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -37,11 +37,13 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="App-header text-4xl font-bold text-white bg-gray-800 p-4">Prep2Play</h1>
+      <h1 className="App-header text-4xl font-bold text-white bg-gray-800 p-4 text-center">Prep2Play</h1>
       <div className="App">
         <SearchBar onSearch={search} />
-        <SearchResults searchResults={searchResults} onAdd={addTrack} />
-        <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} />
+        <div className="App-playlist flex flex-col md:flex-row md:space-x-4 md:justify-center">
+        <SearchResults className="w-max" searchResults={searchResults} onAdd={addTrack} />
+        <Playlist className="w-full" playlistTracks={playlistTracks} onRemove={removeTrack} />
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,6 @@
 .Track{
-    background-color: rgb(230, 212, 248);
-    border: 1px gray solid;
-    margin: 5px;
-}
-.Track-information{
+    border-bottom: 1px solid rgb(216, 216, 216);
+    text-align:start ;
+    margin: 5px 3%;
     
 }
