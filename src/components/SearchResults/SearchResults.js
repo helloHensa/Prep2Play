@@ -11,7 +11,7 @@ const SearchResults = ({ SearchResults, onAdd }) => {
     ];
 
     return (
-        <div className="SearchResults md:w-3/5 backdrop-blur-xl	backdrop-brightness-125	 rounded">
+        <div className="SearchResults md:w-3/5 backdrop-blur-xl	backdrop-brightness-125	bg-lime-200/25 shadow-lg rounded-lg">
             <h2>Results</h2>
             <Tracklist tracks={mockSearchResults} onAdd={onAdd} isRemoval={false} />
         </div>

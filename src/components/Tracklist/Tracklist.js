@@ -5,7 +5,7 @@ import './Tracklist.css';
 const Tracklist = ({ tracks, onAdd, isRemoval, onRemove}) => {
 
     return(
-        <div className="Tracklist">
+        <div className="Tracklist ">
             {tracks.map(track => (
                 <Track
                     key={track.id}
