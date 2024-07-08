@@ -1,9 +1,7 @@
 .App {
   text-align: center;
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./Designer.jpeg');
-  height: 100%;
   
-  padding: 0 5% 15% 5%;
   background-size:cover;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
