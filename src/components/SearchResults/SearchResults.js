@@ -10,11 +10,14 @@ const SearchResults = ({ searchResults, onAdd }) => {
   ];
 
   return (
-    <div className="SearchResults flex-grow backdrop-blur-md bg-lime-200/25 shadow-lg rounded-lg flex-1 min-h-0 overflow-auto">
+    <div className="search-results md:w-1/2 backdrop-blur-md bg-lime-200/25 shadow-lg rounded-lg flex-1 flex flex-col min-h-0">
       <h2 className="pt-1">Results</h2>
-      <Tracklist tracks={mockSearchResults} onAdd={onAdd} isRemoval={false} />
+      <div className="overflow-y-auto flex-grow max-h-[calc(100vh-500px)] sm:max-h-[calc(100vh-500px)]">
+        <Tracklist tracks={mockSearchResults} onAdd={onAdd} isRemoval={false} />
+      </div>
     </div>
   );
 };
 
 export default SearchResults;
+

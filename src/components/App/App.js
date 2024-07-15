@@ -30,12 +30,12 @@ const App = () => {
   };
 
   return (
-    <div className='App h-screen flex flex-col pb-8'>
+    <div className='App flex h-screen flex-col'>
       <h1 className="App-header text-4xl font-bold text-white bg-gray-800 p-4 text-center">Prep2Play</h1>
-      <div className="px-10 flex flex-col">
+      <div className="flex-1 px-10 flex flex-col p-0">
         <SearchBar onSearch={search} />
-        <div className="App-playlist flex justify-center">
-          <div className="flex w-full max-w-screen-lg flex-col md:flex-row md:space-x-4 md:justify-center gap-5 md:gap-1">
+        <div className="App-playlist flex-1 flex justify-center  mb-6">
+          <div className="flex w-full max-w-screen-lg flex-col md:flex-row md:space-x-4 md:justify-center gap-5 md:gap-1 ">
             <SearchResults searchResults={searchResults} onAdd={addTrack} />
             <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} />
           </div>
