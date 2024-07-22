@@ -9,7 +9,7 @@ const Playlist = ({ playlistTracks, onRemove }) => {
       <div className="overflow-y-auto flex-grow max-h-[calc(100vh-703px)] sm:max-h-[calc(100vh-500px)]"> {/* Adjust max-hight*/}
         <Tracklist tracks={playlistTracks} isRemoval={true} onRemove={onRemove} />
       </div>
-      <button className="mt-1 mb-3 rounded-full backdrop-brightness-150 border-transparent p-1.5 px-3 border hover:border-gray-200">Save To Spotify</button>
+      <button className="mt-1 mb-3 self-center rounded-full backdrop-brightness-150 border-transparent p-1.5 px-3 border hover:border-gray-200">Save To Spotify</button>
     </div>
   );
 };
