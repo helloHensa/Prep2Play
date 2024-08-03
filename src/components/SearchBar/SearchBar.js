@@ -14,15 +14,23 @@ const SearchBar = ({onSearch}) => {
 
   
     return(
-        <div className="SearchBar">
-            <div className="input">
-            <input 
+        
+        <div className="flex justify-center m-10">
+            <div className="flex items-center border border-gray-300 shadow-md w-full max-w-lg bg-white">
+                <input
+                type="text"
                 placeholder="Type song name or creator or album"
                 value={term}
                 onChange={handleTermChange}
-            />
+                className="flex-grow p-3 text-gray-700 focus:outline-none"
+                />
+                <button
+                onClick={search}
+                    className="bg-sky-700/70 text-white p-3 hover:bg-sky-700/90 focus:outline-none"
+                >
+                Search
+                </button>
             </div>
-            <button className="SearchButton " onClick={search}>Search</button>
         </div>
     );
 };
