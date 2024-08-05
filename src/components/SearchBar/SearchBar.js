@@ -25,7 +25,7 @@ const SearchBar = ({onSearch}) => {
                 className="flex-grow p-3 text-gray-700 focus:outline-none"
                 />
                 <button
-                onClick={search}
+                    onClick={search}
                     className="bg-sky-700/70 text-white p-3 hover:bg-sky-700/90 focus:outline-none"
                 >
                 Search

@@ -24,6 +24,9 @@ const App = () => {
   const removeTrack = (track) => {
     setPlaylistTracks(prevTracks => prevTracks.filter(savedTrack => savedTrack.id !== track.id));
   };
+  const clearPlaylist = () => {
+    setPlaylistTracks([])
+  }
 
   const search = (term) => {
     // Implement search functionality here
@@ -37,7 +40,7 @@ const App = () => {
         <div className="App-playlist flex-1 flex justify-center mb-6">
           <div className="flex w-full max-w-screen-lg flex-col md:flex-row md:space-x-4 md:justify-center gap-5 md:gap-1 ">
             <SearchResults searchResults={searchResults} onAdd={addTrack} />
-            <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} />
+            <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} onClear={clearPlaylist}/>
           </div>
         </div>
       </div>
